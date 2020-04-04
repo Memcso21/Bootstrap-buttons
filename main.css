@@ -1,0 +1,160 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  padding-top: 8%;
+  padding-left: 10%;
+  margin-bottom: 1.5rem;
+}
+
+.flex-container {
+  border: 0.5px solid lightgrey;
+  margin: 0.9375rem 2.8125rem 1.875rem;
+  background-color: white;
+  position: absolute;
+  width: 31.5rem;
+  height: 9.375rem;
+}
+
+.flex-container > div {
+  height: 22%;
+  color: white;
+  border: 0.5px solid lightgrey;
+  margin-left: 0.2rem;
+  padding: 0.45rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  font-size: 0.8125rem;
+  border-radius: 5px;
+}
+
+
+.button {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.gomb {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+#default {
+  background-color: lightgrey;
+}
+
+#default:link {
+  color: black;
+}
+
+#primary {
+  background-color: blue;
+}
+
+#success {
+  background-color: green;
+}
+
+#info {
+  background-color: DodgerBlue;
+}
+
+#warning {
+  background-color: rgb(255, 102, 0);
+}
+
+#danger {
+  background-color: red;
+}
+
+.box {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.box:hover {
+  opacity: 1;
+}
+
+/* === MEDIA QUERIES ===*/
+
+@media (max-width: 420px) {
+  h2,
+	.flex-container {
+		float: none;
+    display: block;
+		width: auto;
+    text-align: center;
+	}
+  
+  .flex-container {
+    height: auto;
+    padding-bottom: 1.5rem;
+  }
+  .box {
+    width: 6rem;
+    margin: 0.1rem;
+  }
+}
+
+@media (min-width: 420px) {
+  
+  #default {
+    margin-left: 10%;
+  }
+  
+  #danger {
+    margin-right: 10%;
+  }
+}
+
